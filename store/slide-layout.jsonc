@@ -1,0 +1,7 @@
+{
+    "slider-layout#home": {
+        "clildren": [
+            "tab-layout"
+        ]
+    }
+}
