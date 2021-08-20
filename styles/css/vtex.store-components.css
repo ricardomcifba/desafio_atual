@@ -1,0 +1,22 @@
+.imageElement{
+    
+    /* height: 300px; */
+    width: auto;
+    height: auto;
+    object-fit:contain;
+    object-position:top;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.logoImage{
+    image-orientation: flip;
+    size: 100px;
+}
+
+
