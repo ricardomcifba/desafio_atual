@@ -37,15 +37,13 @@
   "image#deal1": {
     "props": {
       "src": "https://img.icons8.com/pastel-glyph/64/000000/person-male--v2.png",
-      "maxHeight": "24px"
+      "maxHeight": "24px",
+      "blockClass":"icon1"
     }
   },
   "rich-text#deal1": {
     "props": {
-      "src": "https://img.icons8.com/pastel-glyph/64/000000/person-male--v2.png",
-      "maxHeight": "24px",
-      "text": "ENTRAR",
-      "blockClass": "deals"
+      "text": "ENTRAR"
     }
   },
   "flex-layout.col#deals2": {
@@ -57,13 +55,13 @@
   "image#deal2": {
     "props": {
       "src": "https://img.icons8.com/office/16/000000/trophy--v1.png",
-      "maxHeight": "24px"
+      "maxHeight": "24px",
+      "blockClass":"icon2"
     }
   },
   "rich-text#deal2": {
     "props": {
-      "text": "DESAFIOS",
-      "blockClass": "deals"
+      "text": "DESAFIOS"
     }
   },
   "flex-layout.col#deals3": {
@@ -75,13 +73,14 @@
   "image#deal3": {
     "props": {
       "src": "https://img.lovepik.com/element/40028/2196.png_860.png",
-      "maxHeight": "24px"
+      "maxHeight": "24px",
+      "blockClass":"icon3"
     }
   },
   "rich-text#deal3": {
     "props": {
-      "text": "LOJA",
-      "blockClass": "deals"
+      "text": "LOJA"
+
     }
   },
   "flex-layout.col#deals4": {
@@ -93,13 +92,13 @@
   "image#deal4": {
     "props": {
       "src": "https://png.pngtree.com/element_our/sm/20180520/sm_5b012514ace49.jpg",
-      "maxHeight": "24px"
+      "maxHeight": "24px",
+      "blockClass":"icon4"
     }
   },
   "rich-text#deal4": {
     "props": {
-      "text": "SUPORTE",
-      "blockClass": "deals"
+      "text": "SUPORTE"
     }
   }
 }

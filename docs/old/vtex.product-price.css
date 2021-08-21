@@ -44,14 +44,14 @@
   color: #FFFFFF;
 }
 
-/*.savings-discount--summary {
+.savings-discount--summary {
   font-size: 0.875rem;
   font-weight: 600;
   vertical-align: baseline;
   color: #FFFFFF;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-}*/
+}
 
 .listPrice--summary {
   margin-bottom: 0.25rem;
@@ -76,18 +76,4 @@
   vertical-align: baseline;
   color: #FFFFFF;
   padding: 0.25rem 0.5rem 0.25rem 0.5rem;
-}
-
-.currencyCode{
-  color: #59ff00;;
-}
-
-.currencyInteger{
-  color: #59ff00;;
-}
-.currencyDecimal{
-  color: #59ff00;;
-}
-.currencyFraction{
-  color: #59ff00;;
 }

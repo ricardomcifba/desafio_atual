@@ -6,6 +6,16 @@
     width: 120px;
     justify-content: center;
     background: #424242;
+    margin-right: 20px;
+    align-self: auto;
+    align-items: flex-start;
+}
+
+.flexColChild--icons{
+    width: 120px;
+    justify-content: center;
+    background: #424242;
+    margin-left: 0px;
 }
 
 .flexCol{
@@ -14,7 +24,8 @@
 }
 
 .flexRowContent--row-header{
-    background: #742b2b;  
+    background: #742b2b;
+    justify-content: space-around;  
 }
 
 .flexRowContent{

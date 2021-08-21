@@ -4,10 +4,14 @@
 
 .slideChildrenContainer{
     background: #303030;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .slideChildrenContainer--shelf{
     background: #303030;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .imageElement{
@@ -41,6 +45,37 @@
 .slideLayoutContainer{
     background: #303030;
 }
+
+.slide{
+    background: #303030; 
+}
+
+.slide--rick{
+    background: #424242; 
+}
+
+
+
+.paginationDot{
+    opacity: 0;
+}
+
+.slideChildrenContainer--listas2{
+    background-color: #212121;
+    padding-top: 5px;
+  
+  }
+
+  .slideChildrenContainer--rick{
+    background-color: #424242;
+    padding-top: 5px;
+    height: 10px;
+  
+  }
+
+  .caretIcon{
+      size: 5px;
+  }
 
 
 

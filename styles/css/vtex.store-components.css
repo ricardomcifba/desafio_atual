@@ -29,5 +29,24 @@
     background: #424242;
 }
 
+.container{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
+.imageElement--icon1{
+    margin-left: 20px;    margin-top: 10px; margin-bottom: -10px;
+}
+
+.imageElement--icon2{
+    margin-left: 29px;     margin-top: 10px; margin-bottom: -10px;
+}
+
+.imageElement--icon3{
+    margin-left: 6px;    margin-top: 10px; margin-bottom: -10px;
+}
+
+.imageElement--icon4{
+    margin-left: 23px;    margin-top: 10px; margin-bottom: -10px;
+}
 

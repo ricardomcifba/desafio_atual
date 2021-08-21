@@ -1,3 +1,8 @@
 .listContainer {
     justify-content: start;
 }
+
+.listItem{
+    font-size: 3px;
+    color:antiquewhite;
+}

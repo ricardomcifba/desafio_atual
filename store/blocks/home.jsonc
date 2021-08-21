@@ -9,17 +9,17 @@
   },
   "tab-layout":{
    "children": [
-     "tab-list#home",
+     "slider-layout#tab",
      "tab-content#home"
    ],
    "props": {
-    "fullWidth": false,
+    "fullWidth": true,
      "infinite":true,
-    "blockClass": "carousel",
+    "blockClass": "listas2",
      "defaultActiveTabId": "home1"
    }
  },
- "tab-list#home": {
+ "slider-layout#tab": {
   "children": [
     "tab-list.item#home1",
     "tab-list.item#home2",
@@ -31,13 +31,18 @@
     "tab-list.item#home8",
     "tab-list.item#home9",
     "tab-list.item#home10"
-  ]
+  ],
+  "props" : {
+    "blockClass" : "rick"
+  }
+  
 },
 "tab-list.item#home1": {
   "props": {
     "tabId": "home1",
     "label": "PROMOÇÃO",
-    "defaultActiveTab": true
+    "defaultActiveTab": true,
+    "showPaginationDots": "never"
   }
 },
 "tab-list.item#home2": {

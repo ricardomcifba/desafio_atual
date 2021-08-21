@@ -37,7 +37,7 @@
       //"flex-layout.col#spacer",
       "search-bar",
       "locale-switcher",
-      "login",
+      //"wishlist",
       "minicart.v2"
     ]
   },
