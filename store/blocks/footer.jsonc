@@ -7,122 +7,99 @@
   },
   "footer-layout.desktop": {
     "children": [
-      "flex-layout.row#footer-1-desktop",
-      //"flex-layout.row#footer-2-desktop",
-      "flex-layout.row#footer-3-desktop"
+      "flex-layout.row#footer-1-desktop"
     ]
   },
   
   "flex-layout.row#footer-1-desktop": {
     "children": [
-      "login",
-      "login",
-      "minicart.v2",
-      "minicart.v2"//,
-     // "social-networks"
+      "flex-layout.col#deals1",
+      "flex-layout.col#deals2",
+      "flex-layout.col#deals3",
+      "flex-layout.col#deals4"
     ],
     "props": {
-      //"blockClass": "menu-row",
-      //"paddingTop": 6,
-      //"paddingBottom": 3
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
     }
   },
+  
 
- /* "login":{
-
-  },
-
-  "desafio":{
-
-  },
-  "loja":{
-
-  },
-  "suporte":{
-
-  },
-  */
-
-  "social-networks": {
-    "props": {
-      "socialNetworks": [
-        {
-          "name": "Facebook",
-          "url": "https://www.facebook.com/vtexonline/"
-        },
-        {
-          "name": "Instagram",
-          "url": "https://www.instagram.com/vtextruecloud/"
-        },
-        {
-          "name": "Twitter",
-          "url": "https://twitter.com/vtexonline"
-        },
-        {
-          "name": "Youtube",
-          "url": "https://www.youtube.com/user/VTEXTV"
-        }
-      ]
-    }
-  },
-
-  "flex-layout.row#footer-2-desktop": {
-    "children": ["accepted-payment-methods"],
-    "props": {
-      "blockClass": "payment-methods"
-    }
-  },
-  "accepted-payment-methods": {
-    "props": {
-      "paymentMethods": ["MasterCard", "Visa", "Diners Club"]
-    }
-  },
-
-  "flex-layout.row#footer-3-desktop": {
-    "children": ["rich-text#footer"]
-  },
-  "rich-text#footer": {
-
-  },
-
-  "footer-layout.mobile": {
+  "flex-layout.col#deals1": {
     "children": [
-      "flex-layout.row#1-footer-mobile",
-      "flex-layout.row#2-footer-mobile"
+      "image#deal1",
+      "rich-text#deal1"
     ]
   },
-  "flex-layout.row#2-footer-mobile": {
-    "children": ["flex-layout.col#footer-1-mobile"],
+  "image#deal1": {
     "props": {
-      "blockClass": "payment-methods",
-      "paddingTop": 4,
-      "paddingBottom": 4
+      "src": "https://img.icons8.com/pastel-glyph/64/000000/person-male--v2.png",
+      "maxHeight": "24px"
     }
   },
-  "flex-layout.col#footer-1-mobile": {
+  "rich-text#deal1": {
+    "props": {
+      "src": "https://img.icons8.com/pastel-glyph/64/000000/person-male--v2.png",
+      "maxHeight": "24px",
+      "text": "ENTRAR",
+      "blockClass": "deals"
+    }
+  },
+  "flex-layout.col#deals2": {
     "children": [
-      "accepted-payment-methods",
-      "social-networks",
-      "rich-text#footer-mobile"
-    ],
+      "image#deal2",
+      "rich-text#deal2"
+    ]
+  },
+  "image#deal2": {
     "props": {
-      "blockClass": "payment-methods",
-      "paddingTop": 4,
-      "paddingBottom": 4,
-      "rowGap": 4
+      "src": "https://img.icons8.com/office/16/000000/trophy--v1.png",
+      "maxHeight": "24px"
     }
   },
-  "flex-layout.row#1-footer-mobile": {
+  "rich-text#deal2": {
     "props": {
-      "paddingTop": 4,
-      "paddingBottom": 4
-    },
-    "children": ["vtex.menu@2.x:menu#footer-mobile"]
+      "text": "DESAFIOS",
+      "blockClass": "deals"
+    }
   },
-  "rich-text#footer-mobile": {
+  "flex-layout.col#deals3": {
+    "children": [
+      "image#deal3",
+      "rich-text#deal3"
+    ]
+  },
+  "image#deal3": {
     "props": {
-      "text": "All stock and product photos are from photos.icons8.com",
-      "blockClass": "footer"
+      "src": "https://img.lovepik.com/element/40028/2196.png_860.png",
+      "maxHeight": "24px"
+    }
+  },
+  "rich-text#deal3": {
+    "props": {
+      "text": "LOJA",
+      "blockClass": "deals"
+    }
+  },
+  "flex-layout.col#deals4": {
+    "children": [
+      "image#deal4",
+      "rich-text#deal4"
+    ]
+  },
+  "image#deal4": {
+    "props": {
+      "src": "https://png.pngtree.com/element_our/sm/20180520/sm_5b012514ace49.jpg",
+      "maxHeight": "24px"
+    }
+  },
+  "rich-text#deal4": {
+    "props": {
+      "text": "SUPORTE",
+      "blockClass": "deals"
     }
   }
 }

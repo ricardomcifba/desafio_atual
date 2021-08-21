@@ -1,10 +1,178 @@
 {
   "store.home": { 
     "blocks": [
-      "list-context.image-list#demo"//,
-      //"rich-text"
+      "tab-layout",
+      "list-context.image-list#demo",
+      "flex-layout.row#shelf",
+      "rich-text"
     ]
   },
+  "tab-layout":{
+   "children": [
+     "tab-list#home",
+     "tab-content#home"
+   ],
+   "props": {
+    "fullWidth": false,
+     "infinite":true,
+    "blockClass": "carousel",
+     "defaultActiveTabId": "home1"
+   }
+ },
+ "tab-list#home": {
+  "children": [
+    "tab-list.item#home1",
+    "tab-list.item#home2",
+    "tab-list.item#home3",
+    "tab-list.item#home4",
+    "tab-list.item#home5",
+    "tab-list.item#home6",
+    "tab-list.item#home7",
+    "tab-list.item#home8",
+    "tab-list.item#home9",
+    "tab-list.item#home10"
+  ]
+},
+"tab-list.item#home1": {
+  "props": {
+    "tabId": "home1",
+    "label": "PROMOÇÃO",
+    "defaultActiveTab": true
+  }
+},
+"tab-list.item#home2": {
+  "props": {
+    "tabId": "home2",
+    "label": "CORINTHIANS"
+  }
+},
+"tab-list.item#home3": {
+  "props": {
+    "tabId": "home3",
+    "label": "PALMEIRAS"
+  }
+},
+"tab-list.item#home4": {
+  "props": {
+    "tabId": "home4",
+    "label": "SIGNOS"
+  }
+},
+"tab-list.item#home5": {
+  "props": {
+    "tabId": "home5",
+    "label": "DIVERTIDOS"
+  }
+},
+"tab-list.item#home6": {
+  "props": {
+    "tabId": "home6",
+    "label": "7 MARAVILHAS"
+  }
+},
+"tab-list.item#home7": {
+  "props": {
+    "tabId": "home7",
+    "label": "GUERREIROS"
+  }
+},
+"tab-list.item#home8": {
+  "props": {
+    "tabId": "home8",
+    "label": "ÁLBUM 1"
+  }
+},
+"tab-list.item#home9": {
+  "props": {
+    "tabId": "home9",
+    "label": "ÁLBUM 2"
+  }
+},
+"tab-list.item#home10": {
+  "props": {
+    "tabId": "home10",
+    "label": "ÁLBUM 3"
+  }
+},
+ "tab-content#home": {
+   "children": [
+     "tab-content.item#home1",
+     "tab-content.item#home2",
+     "tab-content.item#home3",
+     "tab-content.item#home4",
+     "tab-content.item#home5",
+     "tab-content.item#home6",
+     "tab-content.item#home7",
+     "tab-content.item#home8",
+     "tab-content.item#home9",
+     "tab-content.item#home10"
+
+   ]
+ },
+ "tab-content.item#home1": {
+   "children": [
+     "carousel#home"
+   ],
+   "props": {
+     "tabId": "home1"
+   }
+ },
+ "carousel#home":{
+
+ },
+ "tab-content.item#home2": {
+   "children": [
+     //"shelf#home",
+     //"info-card#home",
+     //"rich-text#question",
+     //"rich-text#link",
+     //"newsletter"
+   ],
+   "props": {
+     "tabId": "home2"
+   }
+  },
+  "tab-content.item#home3": {
+      "props": {
+      "tabId": "home3"
+    }
+   },
+   "tab-content.item#home4": {
+    "props": {
+    "tabId": "home4"
+  }
+ },
+ "tab-content.item#home5": {
+  "props": {
+  "tabId": "home5"
+}
+},
+"tab-content.item#home6": {
+  "props": {
+  "tabId": "home6"
+}
+},
+"tab-content.item#home7": {
+  "props": {
+  "tabId": "home7"
+}
+},
+"tab-content.item#home8": {
+  "props": {
+  "tabId": "home8"
+}
+},
+"tab-content.item#home9": {
+  "props": {
+  "tabId": "home9"
+}
+},
+"tab-content.item#home10": {
+  "props": {
+  "tabId": "home10"
+}
+},
+
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
     "props": {
@@ -16,12 +184,12 @@
       "blockClass": "carousel",
       "images": [
         {
-          "image": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210820%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210820T172817Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=7ff19f1fe5b0177bba9cba06321d02c947d9100419136fb657b832b07e04780f",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210820%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210820T225822Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=c85f0ab56631d741e916f55c6c3c98d22f45505a213c0ade4853fdf861fe5d70",
+          "mobileImage": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210820%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210820T225822Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=c85f0ab56631d741e916f55c6c3c98d22f45505a213c0ade4853fdf861fe5d70"
         },
         {
-          "image": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e?response-content-disposition=inline%3B%20filename%3D%22W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png%22%3B%20filename%2A%3DUTF-8%27%27W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210820%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210820T172856Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=2bd884fdd2c585f29b07156a47554026bbf8595e647d47c273ca73dd2170bc63",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e?response-content-disposition=inline%3B%20filename%3D%22W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png%22%3B%20filename%2A%3DUTF-8%27%27W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210820%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210820T225857Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=cb2346566d91698ccb79bf6beb98f74af6086fd9d0efb9b658841473764ee172",
+          "mobileImage": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e?response-content-disposition=inline%3B%20filename%3D%22W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png%22%3B%20filename%2A%3DUTF-8%27%27W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210820%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210820T225857Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=cb2346566d91698ccb79bf6beb98f74af6086fd9d0efb9b658841473764ee172"
         }
       ]
     }
@@ -37,7 +205,30 @@
       "showNavigationArrows": "desktopOnly",
       "blockClass": "carousel"
     }
+  },
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#demo1"]
+  },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
   }
+
   //,
 
 //  "rich-text": { 

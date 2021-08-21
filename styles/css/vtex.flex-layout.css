@@ -1,3 +1,27 @@
-.flexRowContent{
+.flexRow--deals{
     background: #303030;
+}
+
+.flexColChild{
+    width: 120px;
+    justify-content: center;
+    background: #424242;
+}
+
+.flexCol{
+    justify-content: center;
+    background: #424242;
+}
+
+.flexRowContent--row-header{
+    background: #742b2b;  
+}
+
+.flexRowContent{
+    background: #424242;
+}
+
+
+.clearLink{
+    background: #424242;
 }

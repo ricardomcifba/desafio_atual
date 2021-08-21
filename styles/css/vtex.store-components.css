@@ -1,5 +1,5 @@
 .imageElement{
-    
+    width: 25%;
     /* height: 300px; */
     width: auto;
     height: auto;
@@ -18,5 +18,16 @@
     image-orientation: flip;
     size: 100px;
 }
+
+.flexColChild{
+    justify-content: center;
+    align-items: baseline;
+    background: #424242;
+}
+
+.seachBarContainer{
+    background: #424242;
+}
+
 
 

@@ -18,13 +18,14 @@
   },
   "sticky-layout#desktop": {
     "props": {
-      "blockClass": "sticky-header",
-      "background": "action-primary"
+      "blockClass": "sticky-header"//,
+      //"background": "action-primary"
     },
     "children": ["flex-layout.row#desktop"]
   },
   "flex-layout.row#desktop": {
     "props": {
+      "blockClass": "row-header",
       "horizontalAlign": "center",
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
@@ -33,7 +34,7 @@
     },
     "children": [
       "flex-layout.col#logo-desktop",
-      "flex-layout.col#spacer",
+      //"flex-layout.col#spacer",
       "search-bar",
       "locale-switcher",
       "login",
@@ -70,7 +71,7 @@
     "children": [
       "drawer",
       "logo",
-      //"flex-layout.col#spacer",
+      "flex-layout.col#spacer",
       "login",
       "minicart.v2"
     ],
@@ -85,5 +86,30 @@
     "children": [
 
     ]
-  }
+  },
+  "search-bar": {
+    "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "openAutocompleteOnFocus": true
+    }
+  },
+  "autocomplete-result-list.v2": {
+    "blocks": ["product-summary"]
+  }/*,
+  "search-result-layout.desktop": {
+    "children": [
+      "flex-layout.row#did-you-mean",
+      "flex-layout.row#suggestion",
+      "flex-layout.row#banner-one",
+      "flex-layout.row#result"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "preventRouteChange": true,
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      }
+    }
+  }*/
 }

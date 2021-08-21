@@ -2,9 +2,15 @@
     background: #303030;
 }
 
+.slideChildrenContainer{
+    background: #303030;
+}
+
+.slideChildrenContainer--shelf{
+    background: #303030;
+}
+
 .imageElement{
-    
-    /* height: 300px; */
     width: auto;
     height: auto;
     object-fit:contain;
@@ -13,9 +19,27 @@
     display: block;
     overflow: hidden;
     position: relative;
-    border-radius: 20px;
+    border-radius: 50px;
     margin-left: 200px;
     margin-right: 200px;
+}
+
+.listContainer{
+    width: auto;
+    height: auto;
+    object-fit:contain;
+    object-position:top;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.slideLayoutContainer{
+    background: #303030;
 }
 
 
