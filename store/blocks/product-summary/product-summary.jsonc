@@ -1,8 +1,8 @@
 {
   "product-summary.shelf": {
     "children": [
-      "stack-layout#prodsum",
       "product-summary-name",
+      "stack-layout#prodsum",
       "flex-layout.col#productRating",
       "product-summary-space",
       "product-list-price#summary",
@@ -47,9 +47,9 @@
     "children": ["product-highlight-text"]
   },
   "product-highlight-text": {
-    //"props": {
-    //  "message": "{highlightName}"
-    //}
+    "props": {
+      "message": "{highlightName}"
+    }
   },
 
   "product-list-price#summary": {
@@ -65,8 +65,8 @@
       "marginBottom": 4
     },
     "children": [
-      "product-selling-price#summary",
-      "product-price-savings#summary"
+      "product-selling-price#summary"//,
+      //"product-price-savings#summary"
     ]
   },
   "product-installments#summary": {

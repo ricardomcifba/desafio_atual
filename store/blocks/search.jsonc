@@ -53,19 +53,46 @@
   },
   "search-result-layout.desktop": {
     "children": [
-      "flex-layout.row#searchbread",
-      "flex-layout.row#searchtitle",
       "flex-layout.row#result"
     ],
     "props": {
       "preventRouteChange": true
     }
   },
-  "flex-layout.row#searchbread":{
-  },
-  "flex-layout.row#searchtitle":{
-  },
+
   "flex-layout.row#result":{
-  }
+    "children":[
+      "search-content#lp"
+    ]
+  },
+  "search-content#lp":{
+    "blocks":[
+      "gallery",
+      "not-found"
+    ]
+   },
+   "gallery":{
+    "props": {
+      "layout": [
+        {
+          "name":"grid",
+          "component": "GridSummary",
+          "itemsPerRow": {
+            "(min-width:1300)":4,
+            "desktop": 3,
+            "tablet":3,
+            "phone": 2
+          }
+        },
+        {
+          "name":"list",
+          "component":"ListSummary",
+          "itemsPerRow":1
+        }
+      ],
+      "ListSummary":"product-summary.shelf",
+      "GridSummary":"product-summary.shelf"
+    }
+ }
 
 }

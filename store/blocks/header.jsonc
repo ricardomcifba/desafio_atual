@@ -34,10 +34,9 @@
     },
     "children": [
       "flex-layout.col#logo-desktop",
-      //"flex-layout.col#spacer",
+      "flex-layout.col#spacer",
       "search-bar",
       "locale-switcher",
-      //"wishlist",
       "minicart.v2"
     ]
   },
@@ -55,7 +54,7 @@
   "logo": {
     "props": {
       "title": "Logo",
-      "href": "/",
+      "href": "#",
       "url": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/upmedal.png",
       "width": "80",
       "color":"danger"
@@ -87,12 +86,13 @@
 
     ]
   },
-  "search-bar": {
+/*  "search-bar": {
     "blocks": ["autocomplete-result-list.v2"],
     "props": {
       "openAutocompleteOnFocus": true
     }
   },
+  */
   "autocomplete-result-list.v2": {
     "blocks": ["product-summary"]
   }/*,

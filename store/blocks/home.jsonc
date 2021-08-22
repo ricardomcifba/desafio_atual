@@ -224,7 +224,7 @@
   "slider-layout#demo-products": {
     "props": {
       "itemsPerPage": {
-        "desktop": 5,
+        "desktop": 4,
         "tablet": 3,
         "phone": 1
       },
@@ -232,7 +232,12 @@
       "fullWidth": false,
       "blockClass": "shelf"
     }
-  }
+  }//,
+  //"product-summaty.shelf":{
+  //  "props": {
+  //    "displayMode": "inline"
+  //  }
+  //}
 
   //,
 
