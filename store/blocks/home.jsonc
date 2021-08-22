@@ -7,9 +7,11 @@
       "rich-text"
     ]
   },
+
+  //Crianção do tab-layout 
   "tab-layout":{
    "children": [
-     "slider-layout#tab",
+     "tab-list#tab",
      "tab-content#home"
    ],
    "props": {
@@ -19,7 +21,7 @@
      "defaultActiveTabId": "home1"
    }
  },
- "slider-layout#tab": {
+ "tab-list#tab": {
   "children": [
     "tab-list.item#home1",
     "tab-list.item#home2",
@@ -43,6 +45,8 @@
   }
   
 },
+
+//itens do table-layout
 "tab-list.item#home1": {
   "props": {
     "tabId": "home1",
@@ -130,6 +134,8 @@
 
    ]
  },
+
+ //Conteúdo clicável do tablayout para cada um destes será preciso implementar um custoQuery
  "tab-content.item#home1": {
    "children": [
      "carousel#home"
@@ -193,7 +199,7 @@
   "tabId": "home10"
 }
 },
-
+//criação do sliderlayout para produtos em destaque
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
     "props": {
@@ -250,21 +256,5 @@
     }
   }
   
-  //,
-  //"product-summaty.shelf":{
-  //  "props": {
-  //    "displayMode": "inline"
-  //  }
-  //}
 
-  //,
-
-//  "rich-text": { 
- //   "props": { 
- //     "text": "VTEX Store Framework",
- //     "textAlignment": "CENTER",
- //     "textPosition": "CENTER",
- //     "font": "t-heading-1"
- //   }
- // }
 }
