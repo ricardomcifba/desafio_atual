@@ -1,0 +1,10 @@
+.minicartCheckoutButton{
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.minicartSummary{
+    width: 400px;
+}
