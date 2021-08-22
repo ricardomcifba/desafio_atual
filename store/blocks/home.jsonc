@@ -32,8 +32,14 @@
     "tab-list.item#home9",
     "tab-list.item#home10"
   ],
-  "props" : {
-    "blockClass" : "rick"
+  "props": {
+    "itemsPerPage": {
+      "desktop": 8,
+      "tablet": 1,
+      "phone": 1
+    },
+    "infinite": true,
+    "showNavigationArrows": "desktopOnly"
   }
   
 },
@@ -41,62 +47,72 @@
   "props": {
     "tabId": "home1",
     "label": "PROMOÇÃO",
-    "defaultActiveTab": true,
-    "showPaginationDots": "never"
+    //"defaultActiveTab": true,
+    "showPaginationDots": "never",
+    "blockClass": "item1"
   }
 },
 "tab-list.item#home2": {
   "props": {
     "tabId": "home2",
-    "label": "CORINTHIANS"
+    "label": "CORINTHIANS",
+    "blockClass": "item1"
   }
 },
 "tab-list.item#home3": {
   "props": {
     "tabId": "home3",
-    "label": "PALMEIRAS"
+    "label": "PALMEIRAS",
+    "blockClass": "item1"
   }
 },
 "tab-list.item#home4": {
   "props": {
     "tabId": "home4",
-    "label": "SIGNOS"
+    "label": "SIGNOS",
+    "blockClass": "item1"
   }
 },
 "tab-list.item#home5": {
   "props": {
     "tabId": "home5",
-    "label": "DIVERTIDOS"
+    "label": "DIVERTIDOS",
+    "blockClass": "item1"
   }
 },
 "tab-list.item#home6": {
   "props": {
     "tabId": "home6",
-    "label": "7 MARAVILHAS"
+    "label": "7 MARAVILHAS",
+    "blockClass": "item1"
   }
 },
 "tab-list.item#home7": {
   "props": {
     "tabId": "home7",
-    "label": "GUERREIROS"
+    "label": "GUERREIROS",
+    "blockClass": "item1"
   }
 },
 "tab-list.item#home8": {
   "props": {
     "tabId": "home8",
-    "label": "ÁLBUM 1"
+    "label": "ÁLBUM 1",
+    "blockClass": "item1"
   }
 },
 "tab-list.item#home9": {
   "props": {
     "tabId": "home9",
-    "label": "ÁLBUM 2"
+    "label": "ÁLBUM 2",
+    "blockClass": "item1"
   }
 },
 "tab-list.item#home10": {
   "props": {
     "tabId": "home10",
-    "label": "ÁLBUM 3"
+    "label": "ÁLBUM 3",
+    "blockClass": "item1"
   }
 },
  "tab-content#home": {
@@ -232,7 +248,9 @@
       "fullWidth": false,
       "blockClass": "shelf"
     }
-  }//,
+  }
+  
+  //,
   //"product-summaty.shelf":{
   //  "props": {
   //    "displayMode": "inline"

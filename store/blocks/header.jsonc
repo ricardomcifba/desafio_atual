@@ -36,8 +36,10 @@
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
       "search-bar",
-      "locale-switcher",
-      "minicart.v2"
+      //"locale-switcher",
+      "flex-layout.col#spacer",
+      "minicart.v2",
+      "flex-layout.col#spacer"
     ]
   },
   "flex-layout.col#spacer": {

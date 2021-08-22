@@ -1,8 +1,15 @@
 .listContainer {
-    justify-content: start;
+    justify-content: center;
+    font-size: 1px;
 }
 
 .listItem{
-    font-size: 3px;
-    color:antiquewhite;
+    font-size: 1px;
+    font-style: oblique;
+    color-adjust:unset;
+    background-color: 303030;
+}
+
+.listItem--item1{
+    color: aliceblue;
 }

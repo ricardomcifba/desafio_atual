@@ -51,7 +51,7 @@
 }
 
 .slide--rick{
-    background: #424242; 
+    background: #303030; 
 }
 
 
@@ -77,5 +77,14 @@
       size: 5px;
   }
 
+  .paginationDotsContainer{
+    background: #303030; 
+  }
 
+  .sliderTracker{
+    background: #303030; 
+  }
 
+  .sliderLayoutContainer{
+    background: #303030; 
+  }
